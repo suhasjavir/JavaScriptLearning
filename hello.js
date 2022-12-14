@@ -13,7 +13,7 @@ console.log("Concatenation using concat(): ", result);
 var greet = "Good Morning";
 var indexOf = greet.indexOf("M");
 console.log("Index of character M: ", indexOf);
-
+console.log("Character of index 5 is:", greet.charAt(5));
 var indexOfNin = greet.indexOf("nin");
 console.log("Index of substring nin: ", indexOfNin);
 
