@@ -1,4 +1,3 @@
-
 function lineOne(){
     console.log("Do it now.");
 }
@@ -30,4 +29,4 @@ function addThreeValues(no1, no2, no3){
     console.log("Addition Of Given Three Values:", no1 + no2 + no3);
 }
 addThreeValues(10.23, 600,40);
-addThreeValues("Hello", "Good", "Morning");
+addThreeValues("Hello ", "Good ", "Morning");
