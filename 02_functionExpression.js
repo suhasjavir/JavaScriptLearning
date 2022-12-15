@@ -1,10 +1,9 @@
 var myName = "Mohit";
 console.log(myName);
-
 // Function Expression
 var showResult = function() {
     console.log("show.....");
-};
+}
 showResult();
 
 // We can store a function as value in JS

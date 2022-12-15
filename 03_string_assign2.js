@@ -26,7 +26,5 @@ var stringHandsOn = function(){
     console.log(`Is string ending with "up":`, strRemspace.includes("up"));
     console.log(`--------------10--------------------`);
     console.log(`Is string starting with "Hey":`, strRemspace.includes("Hey"));
-
-
 }
 stringHandsOn()

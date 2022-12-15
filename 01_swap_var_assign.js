@@ -1,15 +1,13 @@
 var sweety = "Sweety";
 var cutie = "Cutie";
 console.log("---------Before Swap--------");
-console.log( sweety, cutie);
+console.log(sweety, cutie);
 console.log("---------After Swap---------");
 var temp = sweety;
 sweety = cutie;
 cutie = temp;
 console.log(sweety, cutie);
 console.log("============================");
-
-
 var num1 = 1000;
 var num2 = 2000;
 var num3 = 3000;
