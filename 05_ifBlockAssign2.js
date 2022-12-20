@@ -20,7 +20,7 @@ var gradeCalculation = function (marks) {
   if (marks <= 0 || marks > 100) {
     console.log(`You have entered ${marks}, Prease provide the valid marks`);
   }
-};
+}
 gradeCalculation(98);
 gradeCalculation(80);
 gradeCalculation(90);
