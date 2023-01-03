@@ -5,16 +5,16 @@ var votingElegibility = function (age) {
   var ageToElegible = 18 - age;
   if (age <= 0 || age >= 120) {
     console.log(
-      `Your age is "${age}"... Invalid data... Please, Provide valid data.`
+      `Your age is "${age}"... Invalid data... Please, Provide valid data.\n`
     );
   } else {
     if (age > 0 && age <= 18)
       console.log(
-        `Your age is "${age}" ... You are minor and not elegible for vote. wait for ${ageToElegible} years`
+        `Your age is "${age}" ... You are minor and not elegible for vote. wait for ${ageToElegible} years\n`
       );
     else
       console.log(
-        `Your age is "${age}"... Congratulations!!!........ you are eligible for vote.`
+        `Your age is "${age}"... Congratulations!!!........ you are eligible for vote.\n`
       );
   }
 };
@@ -28,18 +28,18 @@ votingElegibility(0);
 console.log(`\n2) !!! -----------"Grade Calculation." ----------- !!!\n`);
 var gradeCalculation = function (marks) {
   if (marks <= 0 || marks > 100 || typeof marks != "number") {
-    console.log(`Your marks is "${marks}": please provide valid marks`);
+    console.log(`Your marks is "${marks}": please provide valid marks\n`);
   }
   if (marks > 90 && marks <= 100 && typeof marks == "number") {
-    console.log(`Funtastic Marks "${marks}": Your grade is A+`);
+    console.log(`Funtastic Marks "${marks}": Your grade is A+\n`);
   } else if (marks >= 75 && marks <= 90 && typeof marks == "number") {
-    console.log(`Excellent Marks "${marks}": Your grade is A`);
+    console.log(`Excellent Marks "${marks}": Your grade is A\n`);
   } else if (marks >= 50 && marks < 75) {
-    console.log(`Excellent Marks "${marks}": Your grade is B`);
+    console.log(`Excellent Marks "${marks}": Your grade is B\n`);
   } else if (marks >= 35 && marks < 50) {
-    console.log(`Your marks is "${marks}": Your grade is c, Need to improve`);
+    console.log(`Your marks is "${marks}": Your grade is c, Need to improve\n`);
   } else if (marks > 0 && marks < 35) {
-    console.log(`Your marks is "${marks}": Sorry!!!........ You are fail`);
+    console.log(`Your marks is "${marks}": Sorry!!!........ You are fail\n`);
   }
 };
 gradeCalculation(98);

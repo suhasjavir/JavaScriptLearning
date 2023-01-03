@@ -1,0 +1,36 @@
+const fruits_seasonal = ["Banana", "Orange", "Apple", "Mango", "Water melon"];
+console.log(`The given array is: ${fruits_seasonal}\n`);
+console.log(`1) log the first and last element on console.\n The first element of array is: "${fruits_seasonal[0]}", and The last element of array is:"${fruits_seasonal[fruits_seasonal.length - 1]}"`);
+console.log(`---------------------------------------------------------------------------------------`);
+console.log(`2) Add papaya before banana and log array on console.`);
+console.log(`Before adding papaya: "${fruits_seasonal}"`);
+fruits_seasonal.unshift("Papaya");
+console.log(`After adding papaya: "${fruits_seasonal}"`);
+console.log(`---------------------------------------------------------------------------------------`);
+console.log(`3) Remove "Mango" from array and log array on console.`);
+console.log(`before removing mango: "${fruits_seasonal}"`);
+fruits_seasonal.splice(4, 1);
+console.log(`After removing mango: "${fruits_seasonal}"`);
+console.log(`---------------------------------------------------------------------------------------`);
+console.log(`4) Add element Pineapple at the last position.`);
+console.log(`Before adding pineapple: "${fruits_seasonal}"`);
+fruits_seasonal.push("Pineapple");
+console.log(`After adding pineapple: "${fruits_seasonal}"`);
+console.log(`---------------------------------------------------------------------------------------`);
+console.log(`5) Insert "Dragon Fruit" before "water Mellon".`);
+console.log(`Before adding Dragon Fruit element: "${fruits_seasonal}"`);
+fruits_seasonal.splice(4, 0, "Dragon Fruit")
+console.log(`After adding Dragon Fruit element: "${fruits_seasonal}"`);
+console.log(`---------------------------------------------------------------------------------------`);
+console.log(`6) Replace an element "Orange" with "Kiwi".`);
+console.log(`Before replacing element with "kiwi": "${fruits_seasonal}"`);
+fruits_seasonal.splice(2, 1, "Kiwi")
+console.log(`After replacing element with "kiwi": "${fruits_seasonal}"`);
+console.log(`---------------------------------------------------------------------------------------`);
+console.log(`7) Log the elements starting from index 1 to 4.`);
+console.log(`The given array is: "${fruits_seasonal}"`);
+console.log(`The given array is: "${fruits_seasonal[1]}, ${fruits_seasonal[2]}, ${fruits_seasonal[3]}, ${fruits_seasonal[4]}"`);
+console.log(`---------------------------------------------------------------------------------------`);
+console.log(`8) Log the elements starting from index 1 to 4.`);
+let finalFruit = fruits_seasonal.length - 3;
+console.log(`last 3 element: ${fruits_seasonal[4]}, ${fruits_seasonal[5]}, ${fruits_seasonal[6]}`);

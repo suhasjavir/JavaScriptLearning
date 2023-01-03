@@ -25,6 +25,9 @@ let indexOf10 = arrayOfNumbers.indexOf(10);
 console.log(`Index of element 7 --> ${indexOf10}`);
 console.log(`traversing aray using for loop`);
 for (let index = 0; index < arrayOfNumbers.length; index++) {
-    const element = arrayOfNumbers[index];
- console.log(element);   
+    if (index % 2 == 0) {
+        const element = arrayOfNumbers[index];
+        console.log(element);
+    }
+       
 }

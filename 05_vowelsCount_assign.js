@@ -5,11 +5,15 @@ let strTotal = function (str) {
         let char = str.charAt(index);
         let charCopy = char.toLowerCase();
         if (charCopy == 'a' || charCopy == 'e' || charCopy == 'i' || charCopy == 'o' || charCopy == 'u') {
-            counter = counter + 1;            
+            var finChar = char.charAt();
+            counter = counter + 1;    
+            console.log(`total no of vowel : ${finChar}`);
         }
+        
     }
     return counter;
-    // console.log(`total no of vowel : ${counter}`);
+    
 }
 let strCount = strTotal("I am very good IT Developer");
+
 console.log(`total no of vowels in this string: ${strCount}`);
