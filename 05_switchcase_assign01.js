@@ -1,14 +1,10 @@
 function monthOfYear(monthNumber) {
   switch (monthNumber) {
     case 1:
-      console.log(
-        `You selected month no "${monthNumber}" and it's a "January"`
-      );
+      console.log(`You selected month no "${monthNumber}" and it's a "January"`);
       break;
     case 2:
-      console.log(
-        `you selected month no "${monthNumber}" and it's a "February"`
-      );
+      console.log(`you selected month no "${monthNumber}" and it's a "February"`);
       break;
     case 3:
       console.log(`you selected month no "${monthNumber}" and it's a "march"`);

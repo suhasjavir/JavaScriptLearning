@@ -95,7 +95,6 @@ console.log(`${totalmarks}`);
 console.log(`=============Accessing an array=============`);
 console.log(student.familyMemberNames);
 
-
 console.log(`Object entries`);
 const billgates = {
     height: 6,
@@ -124,9 +123,6 @@ for (const key in billgates) {
     console.log(element);
   }
 }
-
-
-
 
 var arrayOfNum = [4, 5, 6, 8, 9, 33, 66];
 let joinResult = arrayOfNum.join(" ");
