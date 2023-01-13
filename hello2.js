@@ -1,7 +1,10 @@
-function message (){
-    console.log("hello dude");
-    return function(){
-        console.log("I am learning JS");
-    }
+function doHomework(callbacks){
+    console.log(`Doing homework... Solving tricky problem.`);
+    console.log(`Finally, solved`);
+    callbacks();
 }
-message()();
+
+function copyHomework(){
+    console.log(`Copy homework from friend's notes.`);
+}
+doHomework(copyHomework);
