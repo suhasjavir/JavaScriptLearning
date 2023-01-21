@@ -1,10 +1,8 @@
-function doHomework(callbacks){
-    console.log(`Doing homework... Solving tricky problem.`);
-    console.log(`Finally, solved`);
-    callbacks();
+let car = {
+    brand: "Tata",
+    color:"Black"
 }
-
-function copyHomework(){
-    console.log(`Copy homework from friend's notes.`);
-}
-doHomework(copyHomework);
+let vehicle = {...car};
+console.log(car, vehicle);
+vehicle.color="Red";
+console.log(car, vehicle);

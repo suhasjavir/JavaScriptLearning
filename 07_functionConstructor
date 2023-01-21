@@ -24,7 +24,7 @@ function Student(name, rollNo, age){
  console.log(jenny);
  console.log(minny);
  console.log(tommy);
- console.log(vinny.country);
+ console.log(`Vinayak : ${vinny.country}`);
  console.log(minny.country);
  console.log(jenny.country);
  console.log(tommy.country);

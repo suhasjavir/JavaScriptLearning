@@ -34,7 +34,7 @@ const datta = {
   
   console.log(`=== Adding an property into an object====`);
   person.company = "Microsoft";
-  console.log(person);
+  console.log(person.company);
   
   console.log(`=== Updating an property into an object====`);
   person.age = 65;

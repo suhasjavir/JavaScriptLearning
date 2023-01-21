@@ -1,0 +1,21 @@
+const arrayOfRollNumbers = [113,45,56,11,32,45,109,799,56,45];
+console.log(`Given array: ------------------------------------------------------`);
+console.log(arrayOfRollNumbers);
+console.log(`1) Reverse the array ----------------------------------------------`);
+arrayOfRollNumbers.reverse();
+console.log(arrayOfRollNumbers);
+console.log(`2) Use sort() method without using any custom method --------------`);
+arrayOfRollNumbers.sort();
+console.log(arrayOfRollNumbers);
+console.log(`3) Sort the array in ascending order using custom method ----------`);
+arrayOfRollNumbers.sort((a,b)=>{
+    return a>b ? 1 :-1;
+});
+console.log(arrayOfRollNumbers);
+console.log(`4) find the greast number from array ------------------------------`);
+console.log(`${arrayOfRollNumbers[arrayOfRollNumbers.length-1]}`);
+console.log(`5) find the smallest number from array ----------------------------`);
+console.log(`${arrayOfRollNumbers[0]}`);
+console.log(`6) Remove duplicate elements from array ---------------------------`);
+const arrayOfRollNum = [...new Set(arrayOfRollNumbers)];
+console.log(arrayOfRollNum);
