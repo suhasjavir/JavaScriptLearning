@@ -13,4 +13,6 @@ function isEvenOrOdd(num) {
   isEvenOrOdd(20);
   isEvenOrOdd(11);
   isEvenOrOdd("30");
+  isEvenOrOdd("abc");
+  
   

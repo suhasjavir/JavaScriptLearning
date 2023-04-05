@@ -2,16 +2,20 @@
 function display() {
   //creating a function.
   console.log("My name: Suhas."); //to print this value
-  console.log("My sirname is: Javir."); //to print this value
+  console.log("My sirname is: Javir.", '\n'); //to print this value
 }
 display(); //call or invocation the function
+
+
 function show() {
   console.log("My Collage Name: Tilak Maharashtra Univercity.");
 }
 show();
+
+
 //*******************************************function with argument and no return type.
 function showDetails(myName) {
-  console.log("Details", myName);
+  console.log("\nDetails:", myName);
 }
 showDetails("Suhas Javir");
 showDetails("Popat Madane");
@@ -24,8 +28,11 @@ showDetails("Rupali Arjun");
 // value1 = value2;
 // value2 = temp;
 // console.log("Befor Swap", value1, value2);
+
+console.log(`\n-- swaping values using function --`);
+
 function swapValues(value1, value2) {
-  console.log("Befor Swap", value1, value2);
+  console.log("\nBefor Swap: ", value1, value2);
   var temp = value1;
   value1 = value2;
   value2 = temp;

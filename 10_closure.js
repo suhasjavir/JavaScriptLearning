@@ -7,6 +7,9 @@ function outer(){
         console.log(globalVariable);
         console.log(outerVariable);
         console.log(innerVariable);
+        console.log(outerVariable);
+        let sum = globalVariable + innerVariable + outerVariable;
+        console.log(`${sum}`);
     }
     return inner;
 }

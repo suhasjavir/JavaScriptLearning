@@ -55,3 +55,20 @@ console.log(
 console.log(
   "--------------------------------------------------------------------------"
 );
+
+console.log(`\nReverse string program:\n`);
+
+let str = 'santosh';
+let revStr = '';
+let lastChar = str.length-1;
+console.log(lastChar);
+// console.log(str.charAt(6));
+for(let index = lastChar; index >= 0; index--){
+  let char = str.charAt(index);
+  revStr = revStr.concat(char);
+}
+console.log(revStr);
+
+
+
+
