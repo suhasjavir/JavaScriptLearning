@@ -3,6 +3,12 @@ var myName; // Variable Declaration
 myName = "Mohit Sharma"; // Variable initialization
 console.log(myName);
 
+var myFrdName;  // if variable not assigned any value or not initilised then you want to print something massage then use "??".
+// myFrdName="Popat Madane";
+console.log(myFrdName ?? "My Friend Name.");
+
+console.log();
+
 var myFrdName = "Sachin Tendulkar"; // Variable declaration and initialization at the same time
 console.log(myFrdName);
 

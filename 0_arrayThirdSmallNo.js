@@ -3,8 +3,8 @@
 
 let arr=[21,23,25,28, 24,27, 29, 74, 83, 96, 9, 10, 6, 12];
 let sort;
-for(let i=0;i<arr.length;i++){
-  for(let j=i;j<arr.length;j++){
+for(let i=0; i<arr.length; i++){
+  for(let j=i; j<arr.length; j++){
     if(arr[i]>arr[j]){
       sort = arr[i];
       arr[i] = arr[j];

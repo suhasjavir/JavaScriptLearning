@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color{
+            background-color: yellow;
+            color: blue;
+        }
+
+        .dim{
+            border: 1px solid red;
+            padding: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box" class="color">
+        <p>This is a dummy text.</p>
+    </div>
+
+    <script>
+        let box = document.getElementById("box");
+        console.log("used classes:-", box.className);
+        console.log(`adding a class name "dim".`);
+        box.className += " dim"; 
+        console.log("used classes:-", box.className); // (box.className) :- first method to know which classes are used.
+        console.log(`\nanother method to know class names:-  box.classList :- it will return the result in array format.` );
+        console.log("used classes:-",box.classList); // (box.classList) :- second method to know which classes are used.
+            // it will return result in array format.
+        for (const css of box.classList) {  
+            console.log(css);
+        }
+
+        console.log(`\nNext method is used to remove class.`);
+        box.classList.remove("dim"); // to remove class dim.
+        console.log("class dim is reumoved using remove method:-", box.className);
+
+        console.log("\nnext method is used to add class.");
+        box.classList.add("dim");
+        console.log("class dim is added using add method:-", box.className);
+
+        console.log(`\nNext method is used to remove class.`);
+        box.classList.remove("dim"); // to remove class dim.
+        console.log("class dim is reumoved using remove method:-", box.className);
+
+        console.log(`\nNext method is used to replace class.`);
+        box.classList.replace("dim", "color");
+        console.log("class dim is replaced with color using replace method:-", box.className);
+
+        console.log(`\nNext method is used to know perticular class is used or not and it will return true or false.`);
+        let result = box.classList.contains("dim");
+        console.log("class dim is used or not:-", result);
+        let result1 = box.classList.contains("color");
+        console.log("class color is used or not:-", result1);
+    </script>
+</body>
+</html>

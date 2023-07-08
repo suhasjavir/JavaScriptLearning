@@ -8,7 +8,7 @@ console.log(arrayOfNum);
 // Deep Cloning
 console.log("Array Deep Cloning");
 let arrayEven = [0, 2, 4, 6, 8 ];
-let arrayClone =  [... arrayEven]; // Deep Clone
+let arrayClone = [... arrayEven]; // Deep Clone
 arrayEven[2] = 100;
 arrayClone[2] = 200;
 console.log(arrayEven);

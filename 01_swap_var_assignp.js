@@ -31,7 +31,7 @@ console.log(`befor swap: ${value1} ${value2}`);
 console.log(`After swap: ${value1} ${value2}`);
 
 console.log(`===========================`);
-console.log(`====swapping Numbers====`);
+console.log(`====swapping without using third variable Numbers====`);
 
 var number1 = 1000;
 var number2 = 2000;

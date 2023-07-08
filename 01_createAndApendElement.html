@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Apend element means add new element after any element.</h4>
+
+    <div id="intro">
+    <p id="p1">This is a paragraph tag</p>
+    </div>
+    <script>
+        let elm = document.getElementById("intro");
+        // let content = elm.innerHTML;
+        // console.log(content);
+
+        let h1 = document.createElement("h1"); // to create new element dinamically.
+        h1.className = "try";
+        h1.id = "intro1";
+        // let text = document.createTextNode("This is h1 tag.") // to create text dinamically.
+        // h1.appendChild(text); // to add text dinamically to new tag(h1).
+        h1.textContent = "This is h1 tag."; // text content is used to add text in new tag dinamically.
+        elm.appendChild(h1);// to add h1 element after elm element.
+
+        let para = document.getElementById("p1");
+        console.log(para.textContent); // text content is also used to read the content of an element.
+    </script>
+</body>
+</html>

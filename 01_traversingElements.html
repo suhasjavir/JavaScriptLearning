@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- Traversing Elements means "Indirect Selection". -->
+
+<H2>Heading 1 (Traversing Elements/Indirect Selection)</H2>
+<!-- <h2>parent selection</h2> -->
+<!-- <div>
+    <ul>
+        <li id="intro">List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+        <li>List 4</li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li>List a</li>
+        <li>List b</li>
+        <li>List c</li>
+        <li>List d</li>
+    </ul>
+</div>
+
+<script>
+// give id selector (intro) in the list 1 element.
+    let elm = document.getElementById("intro"); // using this getElementById we can select that perticular element which includes id "intro".
+    // it will select list 1 element.
+    // console.log(elm);
+    // now we want to select the parent element of the "intro" element tag. which is first ul tag.
+    // and for that perpose we have to use parent selector.
+    let prt = elm.parentElement; // by using this parentElement method we can select parent element of the li tag, which is ul tag.
+    console.log(prt);
+    // prt.innerHTML = "Hello"; // by using this innerHTML we can change the all content of parent element.
+    // console.log(prt);
+</script> -->
+
+<!-- <div>
+    <ul id="intro">
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+        <li>List 4</li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li>List a</li>
+        <li>List b</li>
+        <li>List c</li>
+        <li>List d</li>
+    </ul>
+</div>
+
+<script>
+// give id selector (intro) in the ul element.
+    let elm = document.getElementById("intro"); // by using getElementById we can select element form the ul tag.
+    // elm.innerHTML = "Hello"; // using this innerHTML we can change the content of the ul tag. 
+    // console.log(elm);
+
+    // // now we can select the first child element of the parent element.
+    // let node = elm.firstElementChild; // by using the firstElementChild we can select the first element of the pareant element. which is list 1 element.
+    // console.log(node);
+
+// now we can select the last child element of the parent element.
+    let node = elm.lastElementChild; // by using the lastElementChild we can select the last element of the pareant element. which is the last element.
+    console.log(node);
+
+</script> -->
+
+
+<!-- <div>
+    <ul id="intro">
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+        <li>List 4</li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li>List a</li>
+        <li>List b</li>
+        <li>List c</li>
+        <li>List d</li>
+    </ul>
+</div>
+
+<script>
+// now we can select all child elements of the parent element using children property.
+
+// This is for every array element.
+
+// let elm = document.getElementById("intro");
+// let node = elm.children;
+// console.log(node);
+
+
+// This is for changing content every element of an array.
+let elm = document.getElementById("intro");
+let node = elm.children;
+for(i=0; i<node.length; i++){
+    node[i].innerHTML = "Hello";
+    console.log(node[i]);
+}
+
+ </script> -->
+
+
+
+<div>
+    <ul>
+        <li>List 1</li>
+        <li id="intro">List 2</li>
+        <li>List 3</li>
+        <li>List 4</li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li>List a</li>
+        <li>List b</li>
+        <li>List c</li>
+        <li>List d</li>
+    </ul>
+</div>
+<script>
+// How to select sibilings. from element.
+
+let elm = document.getElementById("intro"); // to select the element to perticular class.
+// console.log(elm); 
+
+// let node = elm.previousElementSibling; // to select previous sibling element.
+// console.log(node);
+
+let node = elm.nextElementSibling; // to select next sibling element.
+console.log(node);
+</script> 
+
+</body>
+</html>

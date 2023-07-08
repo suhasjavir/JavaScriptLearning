@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <h2 class="intro">Heading 1</h2>
+    <div id="div1">
+        <p class="intro">Paragraph 1</p>
+        <h2 class="intro">Heading 2</h2>
+        <p>Paragraph 2</p>
+        <h2>Heading 3</h2>
+        <p class="intro">Paragraph 3</p>
+    </div>
+    
+    <script>
+    // if you want to select element p tag which includes intro class.
+
+            // let elm = document.querySelector("p.intro");
+
+    // querySelector selects only first element and return it.
+
+        // elm.innerHTML = "Suhas"; // innerHtml change the content dinamically.
+        // console.log(elm);
+
+    // if you want to all element with p tag and it includes with intro class,
+    // then you have to use querySelectorAll.
+
+    let elm = document.querySelectorAll("p.intro");
+    
+    for(let i = 0; i < elm.length; i++){
+        elm[i].innerHTML = "Javir";
+        console.log(elm[i]);
+    }
+    </script>
+ </body>
+ </html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="menu">
+        <li>Home</li>
+        <li>Product</li>
+        <li>Contact us</li>
+    </ul>
+    <script>
+        // How to replace elements from dom dinamically.
+        let parent = document.getElementById("menu"); // To select the parent element.
+        let item = document.createElement("li");  // Creating the new element.
+        item.textContent = "Services"; // adding the content in new element.
+        let replaceElm = parent.firstElementChild.nextElementSibling; // selecting the which element replace.
+        parent.replaceChild(item, replaceElm); // using replaceChild we can replace the element. 
+        // item is the new element to replace.
+        // replaceElm is the which element to remove for replace element. 
+    </script>
+</body>
+</html>

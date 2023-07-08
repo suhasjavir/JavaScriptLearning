@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Insert element before any element.</h2>
+    <ul id="list">
+    <!-- 1 -->
+    <li>List 1</li>
+    <!-- 2 -->
+    <li>List 2</li>
+    <!-- 3 -->
+    <li>List 3</li>
+    <!-- 4 -->
+    <li>List 4</li>
+    </ul>
+    <script>
+        let elm = document.getElementById("list"); // to select parent element.
+        let item = document.createElement("li"); // to create new element dinamically.
+        item.textContent = "new List 5"; // to add content dinamically in new element.
+
+        let position = elm.firstElementChild.nextElementSibling.nextElementSibling; // to decide position of element.
+
+        elm.insertBefore(item, position);
+
+    </script>
+</body>
+</html>

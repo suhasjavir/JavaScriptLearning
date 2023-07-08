@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="intro">
+        <p>Hello, this is a p tag.</p>
+    </div>
+
+    <script>
+        let elm = document.getElementById("intro"); // to select dom element.
+        let content = elm.innerHTML; // to fetch/display content which is stored in variable.
+        console.log(content);
+
+        let changeElm = elm.innerHTML = "<h2>Hello, this is heading tag.</h2>"; // to set/change dom element dinamically.
+        console.log(changeElm);   
+    </script>
+</body>
+</html>

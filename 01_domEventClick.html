@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+    <!-- <button id="btn" onclick="btnClick()">1. Click Me !!!!</button> -->
+    </div>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <div>
+    <!-- <button id="btn">2. Click Me !!!!</button> -->
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <div>
+    <button id="btn">3. Click Me !!!!</button>
+    </div>
+    <script>
+        // first method to register/call event using inline method. 
+        // 1. click me...
+        // function btnClick(){
+        //     alert(`Hi....Suhas\n\n\n"Button is clicked !!!!"`);
+        // }
+
+        // second method to register/call event using event listener method.
+        // 2. click me...
+
+        // let btn = document.getElementById("btn");
+        // btn.addEventListener('click', btnClick);
+
+        // Third method to register/call event using event listener with anonymous function method.
+        // 3. click me...
+
+        let btn1 = document.getElementById("btn");
+        btn1.addEventListener('click', function(){
+            alert(`Hi....Suhas\n\n\n"Button is clicked !!!!"`);
+        });
+    </script>
+</body>
+</html>
